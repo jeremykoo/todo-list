@@ -21,3 +21,5 @@ class ProjectManager {
         });
     }
 }
+
+export { ProjectManager };

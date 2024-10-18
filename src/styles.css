@@ -1,3 +1,120 @@
-body {
-    background-color: rebeccapurple;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: beige;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    height: 60px;
+}
+
+main {
+    display: flex;
+    height: calc(100% - 60px);
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: blanchedalmond;
+    height: 100%;
+    flex: 1;
+    padding: 20px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    padding: 10px;
+    background-color: bisque;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    padding: 20px;
+    flex: 4;
+}
+
+.todo-item {
+    background-color: bisque;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    /* height: 60px; */
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date {
+    color: gray;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.wrapper > button,
+.todo-item > button {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid red;
+    background-color: transparent;
+    color: red;
+    font-weight: bold;
+}
+
+
+form {
+    padding: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.form-row > input {
+    width: 100%;
+}
+
+.last-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.last-row > p {
+    margin-right: 20px;
+}
+
+.confirm {
+    margin-top: 20px;
 }
